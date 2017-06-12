@@ -35,3 +35,44 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.wrap {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+header {
+  overflow: hidden; }
+  header .logo {
+    float: left;
+    font-family: "Lobster", cursive;
+    font-size: 42px;
+    padding-top: 20px;
+    color: #44c0c2; }
+  header .main-menu {
+    float: right; }
+    header .main-menu .main-menu__list .main-menu__item {
+      display: inline-block; }
+      header .main-menu .main-menu__list .main-menu__item .main-menu__link {
+        padding: 40px 25px;
+        display: inline-block;
+        color: #484c55;
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        header .main-menu .main-menu__list .main-menu__item .main-menu__link:hover {
+          color: #44c0c2;
+          background: #f8f9fb; }
+          header .main-menu .main-menu__list .main-menu__item .main-menu__link:hover::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: #44c0c2; }

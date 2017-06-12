@@ -1,0 +1,40 @@
+header {
+    overflow: hidden;
+    .logo {
+        float: left;
+        font-family: $logo-font;
+        font-size: 42px;
+        padding-top: 20px;
+        color: $second-color;
+    }
+    .main-menu {
+        float: right;
+        .main-menu__list {
+            .main-menu__item {
+                display: inline-block;
+                .main-menu__link {
+                    padding: 40px 25px;
+                    display: inline-block;
+                    color: $main-color;
+                    text-decoration: none;
+                    font-size: 15px;
+                    position: relative;
+                    @include transition(all 0.3s ease);
+                    &:hover {
+                        color: $second-color;
+                        background: #f8f9fb;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            width: 100%;
+                            height: 3px;
+                            bottom: 0;
+                            left: 0;
+                            background: $second-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
