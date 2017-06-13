@@ -1,0 +1,88 @@
+footer {
+    background: url(../img/footer-bg.jpg) top center no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    .footer__heading {
+        color: $white-color;
+    }
+    .footer-info, .footer-form {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+    }
+    .footer-info {
+        .footer-info__heading {
+            font-size: 24px;
+            color: $white-color;
+        }
+        .footer-info__text {
+            font-size: 14px;
+            padding: 15px 100px 30px 0;
+            color: #a8a8a8;
+        }
+        .footer-social {
+            a {
+                height: 45px;
+                width: 45px;
+                display: inline-block;
+                padding: 0 5px;
+            }
+            .footer-social__facebook {
+                background: url(../img/facebook.svg) no-repeat;
+            }
+            .footer-social__twitter {
+                background: url(../img/twitter.svg) no-repeat;
+            }
+            .footer-social__gplus {
+                background: url(../img/google-plus.svg) no-repeat;
+            }
+        }
+        .footer__contacts {
+            padding-top: 25px;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #bface2;
+        }
+    }
+    .footer-form {
+        max-width: 570px;
+        .footer-form__input {
+            width: 45%;
+            height: 40px;
+            padding-left: 15px;
+            font-size: 16px;
+            @include radius(5px);
+            border: none;
+        }
+        .footer-form__name {
+            float: left;
+        }
+        .footer-form__email {
+            float: right;
+        }
+        .footer-form__message {
+            display: block;
+            width: 98%;
+            resize: none;
+            min-height: 150px;
+            margin: 70px 0 30px;
+            font-size: 16px;
+            padding: 25px 0 0 15px;
+            @include radius(5px);
+        }
+        .footer-form__submit {
+            float: right;
+            background: #49cbcd;
+            border: none;
+            color: $white-color;
+            padding: 15px 50px;
+            font-size: 22px;
+            @include radius(3px);
+            @include transition(all 0.3s ease);
+            cursor: pointer;
+            &:hover {
+                background: #3ba2a4;
+            }
+        }
+    }
+}

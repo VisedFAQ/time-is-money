@@ -41,6 +41,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+input, textarea, a, h1  {
+    outline: none;
+}
+
 // My universal styles
 .wrap {
     max-width: 1270px;
@@ -53,4 +57,9 @@ table {
     color: $main-color;
     text-align: center;
     padding: 100px 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

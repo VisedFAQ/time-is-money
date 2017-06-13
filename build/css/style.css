@@ -37,6 +37,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+input, textarea, a, h1 {
+  outline: none; }
+
 .wrap {
   max-width: 1270px;
   padding: 0 15px;
@@ -47,6 +50,10 @@ table {
   color: #484c55;
   text-align: center;
   padding: 100px 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 header {
   overflow: hidden; }
@@ -196,7 +203,12 @@ header {
       padding: 30px 0;
       color: #fff;
       background: #485460;
-      font-size: 24px; }
+      font-size: 24px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     .plans .plans__single .plans__price {
       display: block;
       padding: 30px 0;
@@ -205,20 +217,20 @@ header {
     .plans .plans__single .plans__features {
       padding-bottom: 40px; }
       .plans .plans__single .plans__features .plans__feature {
-        background: #fff;
         padding: 20px 0;
-        font-size: 14px;
         color: #8c9299;
-        border-top: 1px solid #ecf0f1; }
+        border-top: 1px solid #ecf0f1;
+        background: #fff;
+        font-size: 14px; }
         .plans .plans__single .plans__features .plans__feature:last-child {
           border-bottom: 1px solid #ecf0f1; }
     .plans .plans__single .plans__link {
+      padding: 15px 50px;
+      text-decoration: none;
       color: #fff;
+      background: #788492;
       font-size: 17px;
       font-weight: 600;
-      background: #788492;
-      text-decoration: none;
-      padding: 15px 50px;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
@@ -227,8 +239,86 @@ header {
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-      .plans .plans__single .plans__link:hover {
-        background: #606974; }
+  .plans .plans__single.active .plans__title, .plans .plans__single.active .plans__link {
+    background: #49cbcd; }
+
+footer {
+  background: url(../img/footer-bg.jpg) top center no-repeat;
+  background-size: cover;
+  padding-bottom: 100px; }
+  footer .footer__heading {
+    color: #fff; }
+  footer .footer-info, footer .footer-form {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top; }
+  footer .footer-info .footer-info__heading {
+    font-size: 24px;
+    color: #fff; }
+  footer .footer-info .footer-info__text {
+    font-size: 14px;
+    padding: 15px 100px 30px 0;
+    color: #a8a8a8; }
+  footer .footer-info .footer-social a {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    padding: 0 5px; }
+  footer .footer-info .footer-social .footer-social__facebook {
+    background: url(../img/facebook.svg) no-repeat; }
+  footer .footer-info .footer-social .footer-social__twitter {
+    background: url(../img/twitter.svg) no-repeat; }
+  footer .footer-info .footer-social .footer-social__gplus {
+    background: url(../img/google-plus.svg) no-repeat; }
+  footer .footer-info .footer__contacts {
+    padding-top: 25px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #bface2; }
+  footer .footer-form {
+    max-width: 570px; }
+    footer .footer-form .footer-form__input {
+      width: 45%;
+      height: 40px;
+      padding-left: 15px;
+      font-size: 16px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      border: none; }
+    footer .footer-form .footer-form__name {
+      float: left; }
+    footer .footer-form .footer-form__email {
+      float: right; }
+    footer .footer-form .footer-form__message {
+      display: block;
+      width: 98%;
+      resize: none;
+      min-height: 150px;
+      margin: 70px 0 30px;
+      font-size: 16px;
+      padding: 25px 0 0 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+    footer .footer-form .footer-form__submit {
+      float: right;
+      background: #49cbcd;
+      border: none;
+      color: #fff;
+      padding: 15px 50px;
+      font-size: 22px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      footer .footer-form .footer-form__submit:hover {
+        background: #3ba2a4; }
 
 /* Slider */
 .slick-slider {

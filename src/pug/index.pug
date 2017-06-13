@@ -24,7 +24,7 @@ html
                         p.slider__desc Lorem Ipsum is simply dummy text<br> of the printing 
                         a.slider__button(href="#") Learn more
             .team.wrap
-                h1.team__heading.heading The Team
+                h1.team__heading.heading#team The Team
                 ul.team-list
                     li.team-list__member
                         img.team-list__photo(src="img/team1.jpg" alt="Member")
@@ -80,8 +80,6 @@ html
                             li.plans__feature Lorem ipsum
                             li.plans__feature Lorem ipsum
                             li.plans__feature Lorem ipsum
-                        a.plans__link(href="#") Buy now
-                            
-                        
-                    
+                        a.plans__link(href="#") Buy now    
+            include parts/footer.pug
         include base/scripts.pug

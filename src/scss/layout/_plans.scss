@@ -1,5 +1,6 @@
 .plans {
     padding: 100px 0;
+
     text-align: center;
 
     background: #f1f1f1;
@@ -21,6 +22,8 @@
             background: #485460;
 
             font-size: 24px;
+
+            @include transition(all 0.3s ease);
         }
         .plans__price {
             display: block;
@@ -34,28 +37,36 @@
         .plans__features {
             padding-bottom: 40px;
             .plans__feature {
-                background: $white-color;
                 padding: 20px 0;
-                font-size: 14px;
+
                 color: #8c9299;
                 border-top: 1px solid #ecf0f1;
+                background: $white-color;
+
+                font-size: 14px;
                 &:last-child {
                     border-bottom: 1px solid #ecf0f1;
                 }
             }
         }
         .plans__link {
+            padding: 15px 50px;
+
+            text-decoration: none;
+
             color: #fff;
+            background: #788492;
+
             font-size: 17px;
             font-weight: 600;
-            background: #788492;
-            text-decoration: none;
-            padding: 15px 50px;
+
             @include radius(3px);
             @include transition(all 0.3s ease);
-            &:hover {
-                background: #606974;
-            }
+        }
+    }
+    .plans__single.active {
+        .plans__title, .plans__link {
+            background: #49cbcd;
         }
     }
 }
