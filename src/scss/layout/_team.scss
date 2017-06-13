@@ -1,0 +1,30 @@
+.team {
+    padding-bottom: 100px;
+    .team-list {
+        text-align: center;
+        .team-list__member {
+            display: inline-block;
+            width: 19%;
+            vertical-align: top;
+            padding: 0 20px;
+            color: $team-color;
+            .team-list__photo {
+                width: 100%;
+                max-width: 200px;
+                margin-bottom: 60px;
+                @include radius(100%);
+            }
+            .team-list__name {
+                font-size: 22px;
+            }
+            .team-list__position {
+                display: block;
+                padding: 10px 0 20px;
+                font-size: 14px;
+            }
+            .team-list__desc {
+                font-size: 14px;
+            }
+        }
+    }
+}
