@@ -78,6 +78,76 @@ header {
             left: 0;
             background: #44c0c2; }
 
+.slider {
+  max-width: 1440px;
+  margin: 0 auto; }
+  .slider .slider__first, .slider .slider__second, .slider .slider__third {
+    position: relative;
+    min-height: 560px;
+    background: url(../img/slider1.jpg) left center no-repeat; }
+  .slider .slick-next {
+    right: 35px;
+    width: 51px;
+    height: 51px;
+    background: url(../img/slider-r.png) center center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .slider .slick-next::before {
+      content: ''; }
+    .slider .slick-next:hover {
+      -webkit-filter: brightness(0.8); }
+  .slider .slick-prev {
+    z-index: 9999;
+    left: 35px;
+    width: 51px;
+    height: 51px;
+    background: url(../img/slider-l.png) center center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .slider .slick-prev::before {
+      content: ''; }
+    .slider .slick-prev:hover {
+      -webkit-filter: brightness(0.8); }
+  .slider .slider__caption {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff; }
+    .slider .slider__caption .slider__heading {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.69);
+      font-size: 63px;
+      font-weight: 600; }
+    .slider .slider__caption .slider__desc {
+      padding: 40px 0 50px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.69);
+      font-size: 23px; }
+    .slider .slider__caption .slider__button {
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #fff;
+      border: 3px solid #fff;
+      font-size: 26px;
+      font-weight: 600;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .slider .slider__caption .slider__button:hover {
+        background: rgba(255, 255, 255, 0.3); }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -185,9 +255,7 @@ header {
   .slick-prev:hover, .slick-prev:focus,
   .slick-next:hover,
   .slick-next:focus {
-    outline: none;
-    background: transparent;
-    color: transparent; }
+    outline: none; }
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {

@@ -41,7 +41,7 @@ gulp.task('sass', function(){
 
 // js concat and minify
 gulp.task('scripts', function() {
-  return gulp.src(['src/js/jquery-3.0.0.min.js', 'src/js/jquery-migrate-1.4.1.min.js'])
+  return gulp.src(['src/js/jquery-3.0.0.min.js', 'src/js/jquery-migrate-1.4.1.min.js', 'src/js/slick.min.js', 'src/js/custom.js'])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/js/'));

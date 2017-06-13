@@ -6,20 +6,22 @@ html
         title Time is Money - Test
     body
         .container
-            header.wrap
-                .logo Author
-                nav.main-menu
-                    ul.main-menu__list
-                        li.main-menu__item
-                            a.main-menu__link(href="#") Home
-                        li.main-menu__item
-                            a.main-menu__link(href="#") Service
-                        li.main-menu__item
-                            a.main-menu__link(href="#") Portfolio
-                        li.main-menu__item
-                            a.main-menu__link(href="#") Team
-                        li.main-menu__item
-                            a.main-menu__link(href="#") Blog
-                        li.main-menu__item
-                            a.main-menu__link(href="#") Contact
+            include parts/header.pug
+            .slider
+                .slider__first
+                    .slider__caption
+                        h1.slider__heading This is a main heading
+                        p.slider__desc Lorem Ipsum is simply dummy text<br> of the printing 
+                        a.slider__button(href="#") Learn more
+                .slider__second
+                    .slider__caption
+                        h1.slider__heading This is a main heading
+                        p.slider__desc Lorem Ipsum is simply dummy text<br> of the printing 
+                        a.slider__button(href="#") Learn more
+                .slider__third
+                    .slider__caption
+                        h1.slider__heading This is a main heading
+                        p.slider__desc Lorem Ipsum is simply dummy text<br> of the printing 
+                        a.slider__button(href="#") Learn more
+                
         include base/scripts.pug
