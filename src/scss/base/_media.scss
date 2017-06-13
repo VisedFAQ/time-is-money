@@ -1,0 +1,126 @@
+@media screen and (max-width: 724px) {
+    .heading {
+        padding: 50px 0;
+    }
+    header {
+        .logo, .main-menu {
+            float: none;
+            text-align: center;
+        }
+        .main-menu {
+            white-space: nowrap;
+            position: relative;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            .main-menu__link {
+                padding: 20px 15px !important;
+            }
+        }
+    }
+    .slider {
+        .slider__first, .slider__second, .slider__third {
+            min-height: 400px;
+        }
+        .slider__caption {
+            .slider__heading {
+                font-size: 40px;
+            }
+            .slider__desc {
+                padding: 20px 0 40px;
+                font-size: 18px;
+            }
+            .slider__button {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+        }
+        .slick-prev, .slick-next {
+            width: 25px;
+            height: 25px;
+            background-size: 25px 25px;
+        }
+        .slick-prev {
+            left: 15px;
+        }
+        .slick-next {
+            right: 15px;
+        }
+    }
+    .team {
+        padding-bottom: 30px;
+        .team-list {
+            .team-list__member {
+                width: 33%;
+                .team-list__photo {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .plans {
+        .plans__single {
+            width: 45%;
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+    footer {
+        padding-bottom: 40px;
+        .footer-info {
+            text-align: center;
+            width: 100%;
+            .footer__contacts {
+                padding-bottom: 30px;
+            }
+            .footer-info__text {
+                padding-right: 0;
+            }
+        }
+        .footer-form {
+            max-width: none;
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .team {
+        .team-list {
+            .team-list__member {
+                width: 80%;
+            }
+        }
+    }
+    .plans {
+        padding: 50px 0;
+        .plans__single {
+            width: 90%;
+            margin-bottom: 30px;
+            margin-right: 0;
+            &:last-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer .footer-form .footer-form__input {
+        width: 96%;
+        float: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    footer .footer-form .footer-form__message {
+        width: 96%;
+        margin: 20px 0 30px;
+    }
+    footer .footer-form .footer-form__submit {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}

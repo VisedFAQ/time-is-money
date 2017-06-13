@@ -1,4 +1,5 @@
 header {
+    background: $white-color;
     overflow: hidden;
     .logo {
         float: left;
@@ -8,6 +9,7 @@ header {
         color: $second-color;
     }
     .main-menu {
+        @include transition(all 0.4s ease);
         float: right;
         .main-menu__list {
             .main-menu__item {
@@ -35,6 +37,19 @@ header {
                     }
                 }
             }
+        }
+    }
+    .main-menu.fixed {
+        position: fixed;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: $white-color;
+        z-index: 1999;
+        border-bottom: 2px solid #788492;
+        .main-menu__link {
+            padding: 20px 15px !important;
         }
     }
 }

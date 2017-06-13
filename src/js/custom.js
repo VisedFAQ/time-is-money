@@ -49,4 +49,19 @@ $(document).ready(function(){
           $(this).parent().removeClass("active");
        });
     });
+
+    // MENU FIXED
+    var menu = $('.main-menu');
+
+    $(window).scroll(function () {
+        var y = $(this).scrollTop();
+        var z = 90;
+
+        if (y >= z) {
+            menu.addClass('fixed');
+        }
+        else{
+            menu.removeClass('fixed');
+        }
+    });
 });
